@@ -1,4 +1,4 @@
-/* Silahkan modifikasi CSS untuk halaman utama disini */
+/* Silahkan modifikasi CSS untuk halaman blog disini */
 
 * {
     margin: 0;
@@ -17,13 +17,10 @@ nav {
 nav .team-name {
     /* isi properti disini */
 }
+
 nav .flex {
     display: flex;
     gap: 1rem;
-}
-
-nav .flex a{
-    text-decoration: none;
 }
 
 /* Konten */
@@ -37,32 +34,28 @@ nav .flex a{
 }
 
 .content {
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     padding: 0 1rem;
     margin: 2rem;
-    text-align: center;
+}
+
+.content .card {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.content .ilustrasi {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .section-title {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-}
-
-.mentor-card-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-    gap: 1rem;
-}
-
-.mentor-card {
-    border: 1px solid #ddd;
     text-align: center;
-    background-color: white;
-    width: 100%;
-    max-width: 300px;
-    padding: 1rem;
 }
 
 .card-wrapper {
@@ -73,17 +66,22 @@ nav .flex a{
 }
 
 .card {
-    flex: 1 1 calc(25% - 1rem);
-    max-width: calc(25% - 1rem);
+    flex: 1 1 calc(33.3333% - 1rem);
+    max-width: calc(33.3333% - 1rem);
     border: 1px solid #ddd;
     text-align: center;
     background-color: white;
+    padding: 1rem;
+}
+
+.card img{
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .profile-link {
     display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
     background-color: white;
     text-decoration: none;
 }
